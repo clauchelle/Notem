@@ -54,13 +54,15 @@ Primary style
 
   /* HEADER */
  header {
-   color:#FFFFFF;
+   color: #303030;
    background: #F7DC73;
-   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(233,127,127,0.50) 100%);
  }
- header nav {
+
+  header nav {
    padding:1em 0;
  }
+ 
  header nav ul {
    display:inline;
    text-align: right;
@@ -82,7 +84,7 @@ Primary style
    background: #5F5A43;
  }
  header nav ul > li > a {
-   color:#FFFFFF;
+   color:#303030;
    text-decoration: none;
  }
  header nav ul > li.btn-outline:hover > a {
@@ -130,12 +132,20 @@ Primary style
 media queries
 
 -------------------------------- */
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
-@media (min-width: 768px) {
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+ @media (min-width: 768px) {
    .container {
      width: 750px;
    }
  }
+
+/* Larger than desktop */
  @media (min-width: 992px) {
    .container {
      width: 970px;
@@ -150,8 +160,14 @@ media queries
      width:21%;
    }
  }
+
+/* Larger than Desktop HD */
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
    }
  }
+
+ @media screen and (min-width:1600px) {}
+
+ @media screen and (min-width: 1920px) {}
