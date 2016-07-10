@@ -125,62 +125,6 @@ Primary style
 
 
 
-/*Animation*/
-
-
-
-
-.cd-intro {
-  width: 90%;
-  max-width: 768px;
-  text-align: center;
-}
-
-.cd-intro {
-  margin: 4em auto;
-}
-@media only screen and (min-width: 768px) {
-  .cd-intro {
-    margin: 5em auto;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
-    margin: 6em auto;
-  }
-}
-
-/* -------------------------------- 
-
-xclip 
-
--------------------------------- */
-.cd-headline.clip span {
-  display: inline-block;
-  padding: .2em 0;
-}
-.cd-headline.clip .cd-words-wrapper {
-  overflow: hidden;
-  vertical-align: top;
-}
-.cd-headline.clip .cd-words-wrapper::after {
-  /* line */
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #F7DC73;
-}
-.cd-headline.clip b {
-  opacity: 0;
-}
-.cd-headline.clip b.is-visible {
-  opacity: 1;
-}
-
-
 /* -------------------------------- 
 
 media queries
