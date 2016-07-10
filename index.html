@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en-us">
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
-  <title>Notem</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Save, share and collaborate | Notem</title>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+  <!-- FONTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
 
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 
@@ -34,172 +34,48 @@
 </head>
 <body>
 
-  <!-- Nav
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header role="banner">
-    <div class="container"><div class="three columns">
-     <div class="logo">
-      <a href="#0"><img src="images/notempencil.png" alt="Logo"></a>
-    </div>
-    </div>
-
-    <div class="nine columns">
-    <nav class="main-nav">
-      <ul>
-        <!-- insert more links here -->
-        <li><a class="cd-signin" href="#0">Sign In</a></li>
-        <li><a class="cd-signup" href="#0">Free Trial</a></li>
-      </ul>
-    </nav>
-    </div>
-  </div>
-  </header>
-
-
-  <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
-    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
-      <ul class="cd-switcher">
-        <li><a href="#0">Sign In</a></li>
-        <li><a href="#0">Free Trial</a></li>
-      </ul>
-
-      <div id="cd-login"> <!-- log in form -->
-        <form class="cd-form1">
-          <p class="fieldset">
-            <label class="image-replace cd-email" for="signin-email">E-mail</label>
-            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-            <span class="cd-error-message">Invalid email!</span>
-          </p>
-
-          <p class="fieldset">
-            <label class="image-replace cd-password" for="signin-password">Password</label>
-            <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
-            <a href="#0" class="hide-password">Hide</a>
-            <span class="cd-error-message">Invalid email!</span>
-          </p>
-
-          <p class="fieldset">
-            <input type="checkbox" id="remember-me" checked>
-            <label for="remember-me">Remember me</label>
-          </p>
-
-          <p class="fieldset">
-            <input class="full-width" type="submit" value="Login">
-          </p>
-        </form>
-        
-        <p class="cd-form1-bottom-message"><a href="#0">Forgot your password?</a></p>
-        <!-- <a href="#0" class="cd-close-form">Close</a> -->
-      </div> <!-- cd-login -->
-
-      <div id="cd-signup"> <!-- sign up form -->
-        <form class="cd-form1">
-          <p class="fieldset">
-            <label class="image-replace cd-username" for="signup-username">Username</label>
-            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-            <span class="cd-error-message">Error message here!</span>
-          </p>
-
-          <p class="fieldset">
-            <label class="image-replace cd-email" for="signup-email">E-mail</label>
-            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-            <span class="cd-error-message">Error message here!</span>
-          </p>
-
-          <p class="fieldset">
-            <label class="image-replace cd-password" for="signup-password">Password</label>
-            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
-            <a href="#0" class="hide-password">Hide</a>
-            <span class="cd-error-message">Error message here!</span>
-          </p>
-
-          <p class="fieldset">
-            <input type="checkbox" id="accept-terms">
-            <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
-          </p>
-
-          <p class="fieldset">
-            <input class="full-width has-padding" type="submit" value="Create account">
-          </p>
-        </form>
-
-        <!-- <a href="#0" class="cd-close-form">Close</a> -->
-      </div> <!-- cd-signup -->
-
-      <div id="cd-reset-password"> <!-- reset password form -->
-        <p class="cd-form1-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-        <form class="cd-form1">
-          <p class="fieldset">
-            <label class="image-replace cd-email" for="reset-email">E-mail</label>
-            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-            <span class="cd-error-message">Error message here!</span>
-          </p>
-
-          <p class="fieldset">
-            <input class="full-width has-padding" type="submit" value="Reset password">
-          </p>
-        </form>
-        <p class="cd-form1-bottom-message"><a href="#0">Back to log-in</a></p>
-      </div> <!-- cd-reset-password -->
-      <a href="#0" class="cd-close-form1">Close</a>
-    </div> <!-- cd-user-modal-container -->
-  </div> <!-- cd-user-modal -->
-</body>
-
-  <title>Notem</title>
-</head>
-<body>
-
-  <!-- Intro
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-  </section> <!-- cd-intro -->
-  <section class="cd-intro">
-    <h1 class="cd-headline clip is-full-width">
-            <span> <h1>
-       <b> Notes. Images. Links.</b> Seamlessly in one place.
-    </h1>
-  </span>
-    <span class="cd-words-wrapper">
-        <h3><b class="is-visible">Curate</b>
-        <b>Store</b>
-        <b>Collaborate</b>
-        <b>Share</b></h3>
-      </span> 
-      <h1 class="cd-headline loading-bar">
-        <span class="cd-words-wrapper">
-        <h3><b class="is-visible"> without the clutter</b></h3></span>
-    </h1>
-  </h1>
-
-    <footer>
-
-           <div class="ten columns offset-by-one">
-       <img class="scale-with-grid" src="images/laptop_dashboard.png" alt="Notem's Web Application" />
+<!-- Hero -->
+ <header>
+   <nav class="container">
+     <div class="one-half">
+       <a href="index.html" class="site-logo"><img src="images/notempencil.png" alt="Notem" /></a>
      </div>
+     <div class="one-half">
+       <ul>
+         <li><a href="signin.html">Sign In</a></li>
+         <li class="btn-outline"><a href="signup.html">Sign Up</a></li>
+       </ul>
+     </div>
+   </nav>
+ <div class="container hero">
+     <h1><b>Notes. Images. Links.</b> Seamlessly in One</h1>
+<p>Notem lets you collect and sort information without the clutter</p>
+     <a href="signup.html" class="btn">Start Your Free Trial!</a>
+     <img src="images/dashboard.png" alt="Notem"/>
+   </div>
+ </header>
 
-      <div class="row">
 
-    </div>
-      
-      
-    </footer>
-
-
-  </section> <!-- cd-intro -->
-
-  <body>
-
+<main role="main">
 
   <!-- Benefits
   ================================================== -->
-    <div class="container">
-      <div class="eight columns offset-by-two">
+ <section class="benefits">
+     <ul class="container">
         <h4>ALL YOUR IDEAS ANYWHERE</h4>
-        <p>Make notes from any device. Drag and drop photos to make a curated gallery. Save links on the go.</p>
-     </div>
-    </div>
+          <li class="one-third">
+            <p>Make notes from any device.</p>
+          </li> 
+          <li class="one-third">
+            <p>Drag and drop photos to make a curated gallery.</p>
+          </li>
+          <li class="one-third">
+            <p>Save links on the go.</p>
+          </li>
+     </ul>
+    </section>
+  </main>
+
 
 
 
@@ -239,18 +115,22 @@
 </main>
 
     <main role="main">
+
   <!-- Testimonial
   ================================================== -->
-    <div class="container">
-      <div class="eight columns offset-by-two">
-        <h4>Best Productivity Tool </h4>
-        <p>“Notem is hands down the best alternative to all the note-taking apps out there. I said goodbye to file and folder chaos. I’m able to share my ideas with my peers and gather inspiration.”</p>
-        <p> Frankie Gehry <p>
-          <p> Lead designer, Spotify </p>
-     </div>
-    </div>
-  </section>
-</main>
+
+  <section class="testimonials">
+   <div class="container">
+     <h2>Best Productivity Tool</h2>
+   </div>
+   <ul class="container">
+       <blockquote>"Notem is hands down the best alternative to all the note-taking apps out there. I said goodbye to file and folder chaos. I’m able to share my ideas with my peers and gather inspiration.”
+       </blockquote>
+       <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+       <p class="name"><strong>Stella B.</strong><br/>Designer, Spotify/p>
+  </ul>
+ </section>
+
 
 
 
@@ -259,79 +139,56 @@
 ========================================= -->
 <section class="pricing">
     <div class="container">
-     <div class="eight columns offset-by-two">
-  <h2>Pricing</h2>
-  <p>Many options to fit your needs. It’s free to try out for 30 days and you can always change your plans.</p>
-</div>
+        <h2>Pricing</h2>
+           <p>Many options to fit your needs. It’s free to try out for 30 days and you can always change your plans.</p>
+    </div>
 
-<div class="row">
-  <div class="one-third column">
-        <div class="pricebox">
-          <header>
+   <ul class="container">
+     <li class="one-third">
+       <div class="box">
              <h3>Casual</h3>
-          <header>
-          <section>
-          <h4>FREE</h4>
+                <h4>FREE</h4>
                 <p>NO CREDIT CARD NEEED</p>
                 <ul>
                   <li>Up to 5 free boxes</li>
                   <li>Up to 10 collaborators</li>
                   <li>5GB storage</li>
-                  <li>24/7 Customer Support<li>
+                  <li>24/7 Customer Support</li>
                   <li>Real-time Collaboration</li>
                 </ul>
-                                <p class="fieldset">
-            <input class="full-width" type="submit" value="Try Free">
-          </p>
-          </section>
-          </div>
-  </div>
-    <div class="one-third column">
-
-          <div class="pricebox">
-            <header>
-                <h3>Small Businesses</h3>
-            </header>
-            <section>
-                  <h4>$5</h4>
-                  <p>BILLED PER MONTH</p>
-                  <ul>
-                  <li>Unlimited boxes</li>
-                  <li>Up to 20 collaborators</li>
-                  <li>15GB storage</li>
-                  <li>24/7 Customer Support<li>
-                  <li>Real-time Collaboration</li>
-                <p class="fieldset">
-            <input class="full-width" type="submit" value="Try Free">
-          </p>
-              </section>
-          </div>
-    </div>
-          <div class="one-third column">
-
-            <div class="pricebox">
-             <header>
-              <h3>Enterprise</h3>
-            </header>
-            <section>
-                    <h4>$10</h4>
-                    <p>BILLED PER MONTH/p>
-                    <ul>
-                  <li>Unlimited boxes</li>
-                  <li>Unlimited collaborators</li>
-                  <li>Unlimited storage</li>
-                  <li>24/7 Customer Support<li>
-                  <li>Real-time Collaboration</li>
-                <p class="fieldset">
-            <input class="full-width" type="submit" value="Try Free">
-          </p>
-                    </ul>
-                  </section>
-            </div>
-          </div>
-    </div>
-</div>
+                  <a href="signup.html" class="btn">Start Your Free Trial!</a>
+        </div>
+     </li>
+    <li class="one-third">
+      <div class="box middle">
+        <h3>Professional</h3>
+        <h4><span>$</span>5 <span class="month">/month</span></h4>
+        <ul>
+          <li>Unlimited boxes</li>
+          <li>Up to 20 collaborators</li>
+          <li><strong>5GB</strong> of storage</li>
+          <li>Real-time collaboration</li>
+        </ul>
+        <a href="signup.html" class="btn">Start Your Free Trial!</a>
+      </div>
+    </li>
+    <li class="one-third">
+      <div class="box">
+        <h3>Expert</h3>
+        <h4><span>$</span>10 <span class="month">/month</span></h4>
+        <ul>
+          <li>Unlimited boxes</li>
+          <li>Unlimited collaborators</li>
+          <li><strong>Unlimited</strong> storage</li>
+          <li>Real-time collaboration</li>
+        </ul>
+        <a href="signup.html" class="btn">Start Your Free Trial!</a>
+      </div>
+    </li>
+  </ul>
 </section>
+
+
 
 
 <!-- Call to Action
@@ -348,47 +205,33 @@
   </div>
 </section>
 
+</main>
+
 
 <!-- Footer
 ================================================== -->
-<footer>
-<div class="container">
-  <div class="eight columns"
-    <nav>
-      <ul> 
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
-    </nav>
-  </div>
+ <footer>
+   <div class="container footer-nav-block">
+       <div class="left-footer-block one-third">
+         <p class="copyright-block">&copy; 2015. <strong>Notem</strong> - All Rights Reserved.</p>
+       </div>
+       <nav class="link-block middle-footer-block one-third">
+         <ul>
+           <li><a href="">Terms</a></li> /
+           <li><a href="">Privacy Policy</a></li> /
+           <li><a href="">Contact Us</a></li> /
+           <li><a href="">About Us</a></li> /
+           <li><a href="">Twitter</a></li>
+         </ul>
+       </nav>
+       <div class="right-footer-block one-third">
+         <img class="logo" src="images/notempencil.png" alt="Notem" />
+       </div>
+   </div>
+ </footer>
 
-    <div class="two columns">
-     <img src="images/notempencil.png" alt="Notem" />
-    </div>
-    <div class="two columns">
-          <p>&copy; 2016. Notem. All Rights Reserved.</p>
-    </div>
-</div>
-</footer>
-  
-  <div class="cd-overlay"></div> <!-- shadow layer -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.dropotron.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/jquery.onvisible.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
