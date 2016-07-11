@@ -23,8 +23,11 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 
   <!-- Favicon
@@ -51,8 +54,12 @@
      <h1 class="animated fadeIn"><b>Notes. Images. Links.</b> Seamlessly in One
      </h1>
 <p>Notem lets you collect and sort information without the clutter</p>
-     <a href="signup.html" class="btn animated zoomIn">Start Your Free Trial!</a>
-     <img src="images/dashboard.png" alt="Notem"/>
+     <a class="btn btn-block btn-social btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+            <span class="fa fa-facebook"></span> Sign Up Free with Facebook
+          </a>
+
+     <a href="signup.html" class="btn animated zoomIn">Sign Up Free with Email</a>
+     <img class="scale-with-grid" img src="images/dashboard.png" alt="Notem"/>
    </div>
  </header>
 
@@ -138,57 +145,92 @@
 
 <!-- Pricing
 ========================================= -->
-<section class="pricing">
     <div class="container">
         <h2>Pricing</h2>
            <p>Many options to fit your needs. It’s free to try out for 30 days and you can always change your plans.</p>
     </div>
 
-   <ul class="container">
-     <li class="one-third">
-       <div class="box">
-             <h3>Casual</h3>
-                <h4>FREE</h4>
-                <p>NO CREDIT CARD NEEED</p>
-                <ul>
-                  <li>Up to 5 free boxes</li>
-                  <li>Up to 10 collaborators</li>
-                  <li>5GB storage</li>
+  <div class="cd-pricing-container cd-has-margins">
+    <ul class="cd-pricing-list">
+      <li>
+        <header class="cd-pricing-header">
+          <h2>Casual</h2>
+
+          <div class="cd-price">
+            <span class="cd-currency">$</span>
+            <span class="cd-value">0</span>
+            <span class="cd-duration">Forever</span>
+          </div>
+        </header> <!-- .cd-pricing-header -->
+
+        <div class="cd-pricing-body">
+          <ul class="cd-pricing-features">
+            <li>Up to <em>5</em> free boxes</li>
+                  <li>Up to <em>10</em> collaborators</li>
+                  <li><em>5GB</em> storage</li>
                   <li>24/7 Customer Support</li>
                   <li>Real-time Collaboration</li>
-                </ul>
-                  <a href="signup.html" class="btn">Start Your Free Trial!</a>
-        </div>
-     </li>
-    <li class="one-third">
-      <div class="box middle">
-        <h3>Professional</h3>
-        <h4><span>$</span>5 <span class="month">/month</span></h4>
-        <ul>
-          <li>Unlimited boxes</li>
-          <li>Up to 20 collaborators</li>
-          <li><strong>5GB</strong> of storage</li>
-          <li>Real-time collaboration</li>
-        </ul>
-        <a href="signup.html" class="btn">Start Your Free Trial!</a>
-      </div>
-    </li>
-    <li class="one-third">
-      <div class="box">
-        <h3>Expert</h3>
-        <h4><span>$</span>10 <span class="month">/month</span></h4>
-        <ul>
-          <li>Unlimited boxes</li>
-          <li>Unlimited collaborators</li>
-          <li><strong>Unlimited</strong> storage</li>
-          <li>Real-time collaboration</li>
-        </ul>
-        <a href="signup.html" class="btn">Start Your Free Trial!</a>
-      </div>
-    </li>
-  </ul>
-</section>
+          </ul>
+        </div> <!-- .cd-pricing-body -->
 
+        <footer class="cd-pricing-footer">
+          <a class="cd-select" href="signup.html">Try Free</a>
+        </footer> <!-- .cd-pricing-footer -->
+      </li>
+
+      <li class="cd-popular">
+        <header class="cd-pricing-header">
+          <h2>Professional</h2>
+
+          <div class="cd-price">
+            <span class="cd-currency">$</span>
+            <span class="cd-value">5</span>
+            <span class="cd-duration">mo</span>
+          </div>
+        </header> <!-- .cd-pricing-header -->
+
+        <div class="cd-pricing-body">
+          <ul class="cd-pricing-features">
+            <li><em>Unlimited</em> free boxes</li>
+                  <li>Up to <em>20</em> collaborators</li>
+                  <li><em>10GB</em> storage</li>
+                  <li>24/7 Customer Support</li>
+                  <li>Real-time Collaboration</li>
+          </ul>
+        </div> <!-- .cd-pricing-body -->
+
+        <footer class="cd-pricing-footer">
+          <a class="cd-select" href="http://codyhouse.co/?p=429">Try Free</a>
+        </footer> <!-- .cd-pricing-footer -->
+      </li>
+
+      <li>
+        <header class="cd-pricing-header">
+          <h2>Expert</h2>
+
+          <div class="cd-price">
+            <span class="cd-currency">$</span>
+            <span class="cd-value">10</span>
+            <span class="cd-duration">mo</span>
+          </div>
+        </header> <!-- .cd-pricing-header -->
+
+        <div class="cd-pricing-body">
+          <ul class="cd-pricing-features">
+           <li><em>Unlimited</em> free boxes</li>
+                  <li><em>Unlimited</em> collaborators</li>
+                  <li><em>Unlimited</em> storage</li>
+                  <li>24/7 Customer Support</li>
+                  <li>Real-time Collaboration</li>
+          </ul>
+        </div> <!-- .cd-pricing-body -->
+
+        <footer class="cd-pricing-footer">
+          <a class="cd-select" href="http://codyhouse.co/?p=429">Try Free</a>
+        </footer>  <!-- .cd-pricing-footer -->
+      </li>
+    </ul> <!-- .cd-pricing-list -->
+  </div> <!-- .cd-pricing-container --> 
 
 
 
@@ -233,6 +275,8 @@
 
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
