@@ -26,6 +26,8 @@ html * {
  body {
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    color:#333333;
+   width: 100%
+   margin: auto;
  }
 
  h1, h2, h3, h4, h5, h6 {
@@ -54,6 +56,20 @@ a {
 img {
   max-width: 100%;
 }
+
+
+.right {
+    float: right;
+    width: 350px;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    width: 350px;
+    padding: 10px;
+}
+
 
   /* GRID */
  .container {
@@ -140,6 +156,37 @@ img {
    margin:3em auto 0;
  }
 
+
+
+/*Responsive Navigation*/
+@media (max-width:992px) {
+  header {
+    position: relative;
+  }
+  .bloop {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+@media (max-width:443px) {
+  header ul {
+    top: 23px;
+    font-size: 14px;
+  }
+  .btn-outline {
+    display: none;
+  }
+}
+
+/*Hedaer Img Responsive fix*/
+
+@media (max-width:700px) {
+  header .hero img {
+    width: 80%;
+  }
+}
+
   /* BUTTONS */
  .btn {
    border-radius: 4px;
@@ -163,6 +210,92 @@ img {
 .btn-facebook:active,.btn-facebook.active,.open>.dropdown-toggle.btn-facebook{background-image:none}
 .btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled.focus,.btn-facebook[disabled].focus,fieldset[disabled] .btn-facebook.focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
 .btn-facebook .badge{color:#3b5998;background-color:#fff}
+
+
+
+.photos {
+  /* img-28: */
+background: #5F5A43;
+   text-align: center;
+   display:block;
+   position:relative;
+}
+/* -------------------------------- 
+
+Benefits
+-------------------------------- */
+
+.benefits {
+   text-align: center;
+   display:block;
+   position:relative;
+/* base: */
+opacity: 0.5;
+background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(231,200,80,0.50) 100%);
+ }
+ .benefits ul {
+   margin: 0 auto;
+   padding:4em 0;
+ }
+ .benefits ul li {
+   list-style-type: none;
+   display: inline-block;
+ }
+ .benefits i {
+   color:#5F5A43;
+   font-size:60px;
+   margin:0;
+   vertical-align: middle;
+ }
+ .benefits h2 {
+   color:#5F5A43;
+ }
+
+/* Banner */
+
+  #banner {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    background: #35b88f url("images/banner.svg") bottom center no-repeat;
+    padding: 5em 0 5em 0;
+    margin: 0;
+    background-size: 125% auto;
+  }
+
+    #banner .button {
+      color: #35b882;
+      text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+    }
+
+    #banner header {
+      margin: 0 0 2em 0;
+    }
+
+      #banner header h2 {
+        font-weight: 400;
+        font-size: 1.75em;
+        letter-spacing: 8px;
+      }
+
+    #banner p {
+      margin: 0;
+    }
+
+    #banner footer {
+      margin: 2em 0 0 0;
+    }
+
+    #banner a {
+      color: inherit;
+      border-bottom-color: rgba(255, 255, 255, 0.5);
+    }
+
+      #banner a:hover {
+        border-bottom-color: rgba(255, 255, 255, 0);
+      }
+
 
 
 /* -------------------------------- 
@@ -561,6 +694,64 @@ Main Components
     border-radius: 0 0 4px 4px;
   }
 }
+
+ .small {
+   font-size: 12px;
+   color: #FEFEFE;
+   line-height: 15px;
+   font-style:italic;
+ }
+
+ /* TESTIMONIALS */
+ .testimonials {
+   padding:4em 0;
+   text-align: center;
+ }
+ .testimonials h2 {
+   color:#3498DB;
+ }
+ .testimonials ul li {
+   list-style-type: none;
+ }
+ .testimonials blockquote {
+   color:#FFFFFF;
+   text-align: left;
+   font-style: italic;
+   background:#34495E;
+   position: relative;
+   padding:30px;
+   width:auto;
+   margin:0;
+ }
+ .testimonials blockquote:after {
+   top: 100%;
+   left: 13%;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-top-color: #34495E;
+   border-width: 10px;
+   margin-left: -10px;
+ }
+
+  .testimonials img {
+   height: 65px;
+   width: 65px;
+   border-radius:50%;
+   float: left;
+   display: inline-block;
+   margin:20px 10px 0 0;
+ }
+ .testimonials p.name {
+   float: left;
+   display: inline-block;
+   text-align: left;
+   font-size:13px;
+   margin-top: 30px;
+ }
 
 /* -------------------------------- 
 
