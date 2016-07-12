@@ -233,22 +233,46 @@ Benefits
 opacity: 0.5;
 background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(231,200,80,0.50) 100%);
  }
+
+
+
+.benefits h3 {
+ /* Make notes from any : */
+opacity: 0.8;
+font-family: OpenSans-Semibold;
+font-size: 25px;
+color: #5F5A43;
+letter-spacing: 0px;
+line-height: 48px;
+text-align: center;
+}
+
+
  .benefits ul {
-   margin: 0 auto;
+   magin: 0 auto;
    padding:4em 0;
  }
+
  .benefits ul li {
    list-style-type: none;
    display: inline-block;
  }
+
  .benefits i {
-   color:#5F5A43;
    font-size:60px;
    margin:0;
    vertical-align: middle;
+   /* : */
+color: #5C5C5C;
  }
+
  .benefits h2 {
-   color:#5F5A43;
+   /* ALL YOUR IDEAS ANYWH: */
+font-family: Raleway-Bold;
+font-size: 40px;
+color: #303030;
+letter-spacing: 8.21px;
+line-height: 48px;
  }
 
 /* Banner */
@@ -257,44 +281,81 @@ background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(231,2
     position: relative;
     color: #fff;
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-    text-align: center;
-    background: #35b88f url("images/banner.svg") bottom center no-repeat;
+    background: #5F5A43 url("images/banner.svg") bottom center no-repeat;
     padding: 5em 0 5em 0;
     margin: 0;
     background-size: 125% auto;
   }
 
-    #banner .button {
-      color: #35b882;
-      text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
-    }
-
-    #banner header {
-      margin: 0 0 2em 0;
-    }
-
-      #banner header h2 {
-        font-weight: 400;
-        font-size: 1.75em;
-        letter-spacing: 8px;
+      #banner h2 {
+              width: 700px;
+        text-align: left;
+        /* Still taking screens: */
+font-family: Raleway-Bold;
+font-size: 35px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 50px;
+        
       }
 
     #banner p {
       margin: 0;
+      text-align: left;
+      width: 600px;
+      float: left;
+      /* Now you have a way t: */
+opacity: 0.8;
+font-family: OpenSans-Semibold;
+font-size: 25px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 50px;
+
     }
 
-    #banner footer {
-      margin: 2em 0 0 0;
-    }
+  #bannerRight {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+/* img-28: */
+/* Sketch doesnt export pattern fills at this point */
+background: rgba(247,220,115,0.80);
 
-    #banner a {
-      color: inherit;
-      border-bottom-color: rgba(255, 255, 255, 0.5);
-    }
+    padding: 5em 0 5em 0;
+    margin: 0;
+    background-size: 125% auto;
+  }
 
-      #banner a:hover {
-        border-bottom-color: rgba(255, 255, 255, 0);
+      #bannerRight h2 {
+        width: 600px;
+        float: right;
+        text-align: left;
+        /* Still taking screens: */
+font-family: Raleway-Bold;
+font-size: 35px;
+letter-spacing: 0px;
+line-height: 50px;
+color: #303030;
+
+        
       }
+
+    #bannerRight p {
+      margin: 0;
+      text-align: left;
+      width: 600px;
+      float: right;
+      /* Now you have a way t: */
+opacity: 0.8;
+font-family: OpenSans-Semibold;
+font-size: 25px;
+letter-spacing: 0px;
+line-height: 50px;
+color: #303030;
+
+    }
+
 
 
 
