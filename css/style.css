@@ -46,10 +46,13 @@ html * {
    font-weight: 100;
  }
 
-a {
-  color: #e97d68;
+a.cd-select {
   text-decoration: none;
-  font-size: 15px;
+  /* TRY FREE: */
+font-family: Raleway-Black;
+font-size: 17px;
+color: #FFFFFF;
+letter-spacing: 3.4px;
 }
 
 
@@ -64,6 +67,12 @@ img {
     padding: 10px;
 }
 
+
+.center{
+    float: center;
+    width: 350px;
+    padding: 10px;
+}
 .left {
     float: left;
     width: 350px;
@@ -96,11 +105,32 @@ img {
  }
 
   /* HEADER */
+
  header {
    color: #303030;
-   background: #F7DC73;
-   background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(233,127,127,0.50) 100%);
+   /* base: */
+   /* base: */
+/* base: */
+background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(243,178,33,0.71) 100%);padding-bottom: 30px;}
+
+
+
+ header h1 {
+font-family: Raleway-Bold;
+font-size: 45px;
+color: #303030;
+letter-spacing: 4.8px;
+line-height: 50px;
  }
+
+header p {
+font-family: OpenSans;
+font-size: 30px;
+color: #303030;
+letter-spacing: 3px;
+line-height: 50px;
+}
+
 
   header nav {
    padding:1em 0;
@@ -119,20 +149,25 @@ img {
  }
  header nav ul > li.btn-outline {
    padding:10px 15px;
-   border:2px solid #FFFFFF;
+   border:2px solid #303030;
    border-radius: 4px;
  }
  header nav ul > li.btn-outline:hover {
    color:#34495E;
-   background: #5F5A43;
+   background: #F7DC73;
  }
  header nav ul > li > a {
    color:#303030;
    text-decoration: none;
+   /* Sign Up - It’s FREE: */
+font-family: Raleway-SemiBold;
+font-size: 22px;
+color: #303030;
+letter-spacing: 0.69px;
  }
+
  header nav ul > li.btn-outline:hover > a {
-   color:#FFF;
-   background: #5F5A43;
+   color:#303030;
  }
 
  header .hero {
@@ -199,6 +234,17 @@ img {
    box-shadow: 0px 2px 0px 0px #5F5A43;
  }
 
+
+ .btn:hover {
+   background: #F7DC73;
+   color: #303030;
+ }
+
+
+  .btn:hover a {
+   color:#303030;
+}
+
 .btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
 .btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg>:first-child{line-height:45px;width:45px;font-size:1.8em}
 .btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm>:first-child{line-height:28px;width:28px;font-size:1.4em}
@@ -219,18 +265,90 @@ background: #5F5A43;
    text-align: center;
    display:block;
    position:relative;
+
 }
+
+
+/* -------------------------------- 
+Action
+-------------------------------- */
+
+  #action {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    background: #5F5A43 url("images/banner.svg") bottom center no-repeat;
+    padding: 5em 0 5em 0;
+    margin: 0;
+    background-size: 125% auto;
+  }
+
+      #action h2 {
+        text-align: center;
+        /* Still taking screens: */
+font-family: Raleway-Bold;
+font-size: 30px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 50px;
+        
+      }
+
+
+    #action h3 {
+      margin: 0;
+      text-align: center;
+      /* Now you have a way t: */
+font-family: OpenSans-Semibold;
+font-size: 20px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 50px;
+
+    }
+
+    #action p {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: inline;
+      margin: 0;
+      text-align: center;
+      float: center;
+      /* Now you have a way t: */
+font-family: OpenSans-Semibold;
+font-size: 15px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 60px;
+
+    }
+
+        #action a {
+      margin: 0;
+      align: center;
+      float: center;
+      /* Now you have a way t: */
+font-family: OpenSans-Semibold;
+font-size: 15px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 60px;
+
+    }
+
 /* -------------------------------- 
 
 Benefits
 -------------------------------- */
+
+
+
 
 .benefits {
    text-align: center;
    display:block;
    position:relative;
 /* base: */
-opacity: 0.5;
 background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(231,200,80,0.50) 100%);
  }
 
@@ -240,10 +358,33 @@ background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(231,2
  /* Make notes from any : */
 opacity: 0.8;
 font-family: OpenSans-Semibold;
-font-size: 25px;
+font-size: 20px;
 color: #5F5A43;
+letter-spacing: 1px;
+line-height: 50px;
+text-align: center;
+float: center;
+
+}
+
+.benefits h4 {
+font-family: Raleway-Bold;
+font-size: 18px;
+color: #303030;
+letter-spacing: 4.31px;
+line-height: 30px;
+}
+
+
+
+.benefits p {
+ /* Make notes from any : */
+/* Shareable real-time : */
+opacity: 0.8;
+font-family: OpenSans-Light;
+font-size: 15px;
+color: #000000;
 letter-spacing: 0px;
-line-height: 48px;
 text-align: center;
 }
 
@@ -259,20 +400,20 @@ text-align: center;
  }
 
  .benefits i {
-   font-size:60px;
+   font-size:30px;
    margin:0;
    vertical-align: middle;
-   /* : */
-color: #5C5C5C;
+color: #303030;
+line-height: 60px;
  }
 
  .benefits h2 {
    /* ALL YOUR IDEAS ANYWH: */
 font-family: Raleway-Bold;
-font-size: 40px;
+font-size: 30px;
 color: #303030;
 letter-spacing: 8.21px;
-line-height: 48px;
+line-height: 50px;
  }
 
 /* Banner */
@@ -288,7 +429,7 @@ line-height: 48px;
   }
 
       #banner h2 {
-              width: 700px;
+        width: 700px;
         text-align: left;
         /* Still taking screens: */
 font-family: Raleway-Bold;
@@ -298,6 +439,20 @@ letter-spacing: 0px;
 line-height: 50px;
         
       }
+
+
+      #banner h3 {
+        width: 700px;
+        text-align: left;
+font-family: Raleway-Bold;
+font-size: 30px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 50px;
+opacity: 0.9;
+        
+      }
+
 
     #banner p {
       margin: 0;
@@ -313,6 +468,7 @@ letter-spacing: 0px;
 line-height: 50px;
 
     }
+
 
   #bannerRight {
     position: relative;
@@ -356,6 +512,19 @@ color: #303030;
 
     }
 
+      #bannerRight h3 {
+        width: 600px;
+        float: right;
+        text-align: left;
+font-family: Raleway-Bold;
+font-size: 30px;
+color: #303030;
+letter-spacing: 0px;
+line-height: 50px;
+opacity: 0.9;
+        
+      }
+
 
 
 
@@ -364,6 +533,45 @@ color: #303030;
 Main Components 
 
 -------------------------------- */
+
+.pricing {  
+    padding: 5em 0 5em 0;
+    margin: 0; 
+   text-align: center;
+   display:block;
+   position:relative;
+/* base: */
+background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(231,200,80,0.50) 100%);
+ }
+
+
+.pricing h2 {
+    text-align: center;
+line-height: 50px;
+/* BEST PRODUCTIVITY TO: */
+font-family: Raleway-Bold;
+font-size: 25px;
+color: #303030;
+letter-spacing: 4.8px;
+        
+      }
+
+
+    .pricing p {
+      margin: 0;
+      text-align: center;
+opacity: 0.8;
+font-family: OpenSans-Semibold;
+font-size: 20px;
+color: #303030;
+letter-spacing: 0px;
+line-height: 50px;
+letter-spacing: 1px;
+
+    }
+
+
+
 .cd-header {
   height: 100px;
   line-height: 170px;
@@ -525,6 +733,7 @@ Main Components
   background-color: #3aa0d1;
   color: #FFFFFF;
 }
+
 .cd-pricing-header h2 {
   margin-bottom: 3px;
   font-weight: 700;
@@ -735,19 +944,19 @@ Main Components
     letter-spacing: 2px;
   }
   .no-touch .cd-select:hover {
-    background-color: #112e3c;
+    background-color: #878061;
   }
   .cd-popular .cd-select {
-    background-color: #e97d68;
+    background-color: #303030;
   }
   .no-touch .cd-popular .cd-select:hover {
-    background-color: #ec907e;
+   background-color: #878061;
   }
   .cd-secondary-theme .cd-popular .cd-select {
-    background-color: #0c1f28;
+    background-color: #878061;
   }
   .no-touch .cd-secondary-theme .cd-popular .cd-select:hover {
-    background-color: #112e3c;
+    background-color: #878061
   }
   .cd-has-margins .cd-select {
     display: block;
@@ -757,61 +966,75 @@ Main Components
 }
 
  .small {
-   font-size: 12px;
+   font-size: 8px;
    color: #FEFEFE;
-   line-height: 15px;
+   line-height: 10px;
    font-style:italic;
+   font-family: OpenSans-Light;
  }
 
  /* TESTIMONIALS */
  .testimonials {
-   padding:4em 0;
    text-align: center;
+   position: relative;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+/* base: */
+background: #EEE1A9;
+ padding: 5em 0 5em 0;
+    margin: 0;
+    background-size: 125% auto;
  }
  .testimonials h2 {
-   color:#3498DB;
- }
+        text-align: center;
+letter-spacing: 0px;
+line-height: 50px;
+           opacity: 0.9;
+
+           /* BEST PRODUCTIVITY TO: */
+font-family: Raleway-Bold;
+font-size: 24px;
+color: #303030;
+letter-spacing: 4.8px;
+      }
+
+
  .testimonials ul li {
    list-style-type: none;
  }
  .testimonials blockquote {
-   color:#FFFFFF;
+   color:#303030;
+   opacity: 0.8;
    text-align: left;
-   font-style: italic;
-   background:#34495E;
    position: relative;
-   padding:30px;
+   padding:25px;
    width:auto;
    margin:0;
+   /* “Notem is hands down: */
+font-family: OpenSans-SemiboldItalic;
+font-size: 32px;
+letter-spacing: -0.89px;
+line-height: 50px;
  }
- .testimonials blockquote:after {
-   top: 100%;
-   left: 13%;
-   border: solid transparent;
-   content: " ";
-   height: 0;
-   width: 0;
-   position: absolute;
-   pointer-events: none;
-   border-top-color: #34495E;
-   border-width: 10px;
-   margin-left: -10px;
- }
+
 
   .testimonials img {
    height: 65px;
    width: 65px;
    border-radius:50%;
-   float: left;
+   float: center;
    display: inline-block;
-   margin:20px 10px 0 0;
+   margin:30px 10px 0 0;
  }
  .testimonials p.name {
-   float: left;
+     color:#303030;
+   float: center;
    display: inline-block;
    text-align: left;
-   font-size:13px;
    margin-top: 30px;
+   font-family: OpenSans-Semibold;
+font-size: 15px;
+letter-spacing: -0.89px;
  }
 
 /* -------------------------------- 
