@@ -106,7 +106,7 @@ img {
 
   /* HEADER */
 
- header {
+ #header {
    color: #303030;
    /* base: */
    /* base: */
@@ -115,7 +115,7 @@ background-image: linear-gradient(-180deg, rgba(247,220,115,0.50) 0%, rgba(243,1
 
 
 
- header h1 {
+ #header h1 {
 font-family: Raleway-Bold;
 font-size: 45px;
 color: #303030;
@@ -123,7 +123,7 @@ letter-spacing: 4.8px;
 line-height: 50px;
  }
 
-header p {
+#header p {
 font-family: OpenSans;
 font-size: 30px;
 color: #303030;
@@ -132,31 +132,31 @@ line-height: 50px;
 }
 
 
-  header nav {
+  #header nav {
    padding:1em 0;
  }
 
- header nav ul {
+ #header nav ul {
    display:inline;
    text-align: right;
    float:right;
    margin:0;
  }
- header nav ul > li {
+ #header nav ul > li {
    list-style-type: none;
    display: inline-block;
    margin:0 15px;
  }
- header nav ul > li.btn-outline {
+ #header nav ul > li.btn-outline {
    padding:10px 15px;
    border:2px solid #303030;
    border-radius: 4px;
  }
- header nav ul > li.btn-outline:hover {
+ #header nav ul > li.btn-outline:hover {
    color:#34495E;
    background: #F7DC73;
  }
- header nav ul > li > a {
+ #header nav ul > li > a {
    color:#303030;
    text-decoration: none;
    /* Sign Up - It’s FREE: */
@@ -166,27 +166,27 @@ color: #303030;
 letter-spacing: 0.69px;
  }
 
- header nav ul > li.btn-outline:hover > a {
+ #header nav ul > li.btn-outline:hover > a {
    color:#303030;
  }
 
- header .hero {
+ #header .hero {
    text-align: center;
    display:block;
    position: relative;
  }
- header .hero h1 {
+ #header .hero h1 {
    font-size:48px;
    font-weight: normal;
    margin:95px 0 0;
  }
- header .hero p {
+ #header .hero p {
    font-size: 22px;
    line-height: 26px;
    font-weight: 100;
    margin:10px 0 40px;
  }
- header .hero img {
+ #header .hero img {
    display: block;
    margin:3em auto 0;
  }
@@ -195,7 +195,7 @@ letter-spacing: 0.69px;
 
 /*Responsive Navigation*/
 @media (max-width:992px) {
-  header {
+  #header {
     position: relative;
   }
   .bloop {
@@ -205,7 +205,7 @@ letter-spacing: 0.69px;
 }
 
 @media (max-width:443px) {
-  header ul {
+  #header ul {
     top: 23px;
     font-size: 14px;
   }
@@ -217,7 +217,7 @@ letter-spacing: 0.69px;
 /*Hedaer Img Responsive fix*/
 
 @media (max-width:700px) {
-  header .hero img {
+  #header .hero img {
     width: 80%;
   }
 }
@@ -1036,7 +1036,54 @@ line-height: 50px;
 font-size: 15px;
 letter-spacing: -0.89px;
  }
+ /* FOOTER*/
+ #footer {
+   background-color: #CDCAC0;
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ #footer p, #footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ #footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ #footer nav ul li a {
+   color:#303030;
+   text-decoration: none;
+ }
+ #footer .right-footer-block {
+   background-color: #CDCAC0;
+ }
+ #footer .logo{
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
+ }
 
+@media (min-width: 992px){
+   #footer{
+     background-color: #CDCAC0;
+     height: 100px;
+   }
+   #footer p, #footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   #footer .right-footer-block {
+     background-color: ##CDCAC0;
+   }
+   #footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
+ }
 /* -------------------------------- 
 
 media queries
