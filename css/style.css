@@ -227,14 +227,15 @@ letter-spacing: 0.69px;
   /* BUTTONS */
  .btn {
    border-radius: 4px;
-   color:#FFF;
+   color: #303030;
    font-weight: 700;
    text-decoration: none;
    padding:10px 30px;
-   background: #5F5A43;
-   border: 2px solid #fff;
+   background: transparent;
+   border: 2px solid #303030;
    box-shadow: 0px 2px 0px 0px #5F5A43;
  }
+
 
 
  .btn:hover {
@@ -243,7 +244,7 @@ letter-spacing: 0.69px;
  }
 
 
-  .btn:hover a {
+  .btn:hover > a {
    color:#303030;
 }
 
@@ -337,6 +338,7 @@ letter-spacing: 0px;
 line-height: 60px;
 
     }
+
 
 /* -------------------------------- 
 
@@ -744,10 +746,10 @@ letter-spacing: 1px;
 .cd-popular .cd-pricing-header {
   background-color: #e97d68;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
   .cd-pricing-header {
     height: auto;
-    padding: 1.9em 0.9em 1.6em;
+    padding: 4em 1em 3em;
     pointer-events: auto;
     text-align: center;
     color: #173d50;
@@ -1038,6 +1040,9 @@ line-height: 50px;
 font-size: 15px;
 letter-spacing: -0.89px;
  }
+
+
+
  /* FOOTER*/
  #footer {
    background-color: #CDCAC0;
