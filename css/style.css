@@ -1180,7 +1180,7 @@ letter-spacing: 0.22px;
   background-color: #FED95C;
   height: 30px;
   padding: 0px 15px 15px 15px;
-  width: 100%;
+  width: auto;
   margin-left: -13px;
     border-right: 5px solid #C5BB8E;
    text-decoration: none;
