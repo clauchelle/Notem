@@ -629,7 +629,7 @@ letter-spacing: 1px;
   .box h4 span.month {
     font-family: "Raleway";
     font-weight: 100;
-    color#888;
+    color: #888;
     font-size: 20px;
     vertical-align: middle;
   }
@@ -736,54 +736,84 @@ letter-spacing: -0.89px;
 
 
 
- /* FOOTER*/
- #footer {
-   background-color: #CDCAC0;
-   color: #FFFFFF;
-   height: 150px;
-   position: relative;
-   overflow: hidden;
-   z-index: 0;
- }
- #footer p, #footer nav ul {
-   font-size:14px;
-   font-weight:100;
-   text-align: center;
-   margin: 10px auto 0;
- }
- #footer nav ul li {
-   list-style-type: none;
-   display: inline;
- }
- #footer nav ul li a {
-   color:#303030;
-   text-decoration: none;
- }
- #footer .right-footer-block {
-   background-color: #CDCAC0;
- }
- #footer .logo{
-   padding: 2.35em 0;
-   margin: 0 auto;
-   display: block;
+  /*FOOTER*/
+ footer {
+  background-color: #6C695A;
+  background-image: linear-gradient(to top,
+      #F3B222 0%, #F7DC73 50%, #4B4C58 50%, #4B4C58 100%);
+  color: #FFFFFF;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
  }
 
-@media (min-width: 992px){
-   #footer{
-     background-color: #CDCAC0;
-     height: 100px;
-   }
-   #footer p, #footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-   }
-   #footer .right-footer-block {
-     background-color: ##CDCAC0;
-   }
-   #footer .logo{
-     padding: 2em 0 2em 1.5em;
-   }
+ footer p, footer nav ul {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px auto 0;
  }
+
+ footer nav ul li {
+  list-style-type: none;
+  display: inline;
+ }
+
+ footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+ }
+
+ footer .right-footer-block {
+  background-color: transparent;
+ }
+
+footer .logo {
+  padding: .25em 0;
+  margin: 0 auto;
+  display:block;
+}
+
+@media (min-width: 992px) {
+  footer {
+    background-color: #F7DC73;
+    background-image: linear-gradient(to left,
+      #F3B222  0%, #F7DC73 33.33337%, #4B4C58 33.33337%, #4B4C58  100%);
+    height: 70px;
+    text-align: left;
+  }
+
+  footer .one-third {
+    text-align: left;
+    padding: 1em 0;
+  }
+  footer .link-block {
+    text-align: left;
+  }
+}
+
+@media (max-width:992px) {
+  footer {
+    height: 170px;
+  }
+
+  footer .one-third {
+    text-align: center;
+    width: 100%;
+
+  }
+
+ footer .link-block {
+    margin: .25em 0 0 0;
+  }
+
+  footer .logo {
+    padding: 2em 0;
+    text-align: center;
+  }
+}
+  
 
 
  /*DASHBOARD*/
