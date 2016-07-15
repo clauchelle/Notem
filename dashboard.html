@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/dropit.css">  <!-- Settings -->
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 
@@ -41,8 +42,8 @@
       </ul>
       <p>Boxes</p>
       <ul>
-        <li><a href="#"><i class="fa fa-inbox"></i>Landing Pages</a></li>
-        <li><a href="#"><i class="fa fa-inbox"></i>BB Photos</a></li>
+        <li><a href="#"><i class="fa fa-inbox"></i>Sunset Daze</a></li>
+        <li><a href="#"><i class="fa fa-inbox"></i>IDEO Case</a></li>
         <li><a href="#"><i class="fa fa-plus-square-o"></i>Add a new box</a></li>
       </ul>
     </div>
@@ -141,7 +142,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-
+<script src="js/dropit.js"></script>
+<script type="text/javascript">
+  $(".menu").dropit();
+  $( "#menu" ).click(function() {
+    $("#left-nav").toggleClass("open",200);
+  });
+  </script> 
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
