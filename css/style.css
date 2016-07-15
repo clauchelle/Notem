@@ -235,7 +235,21 @@ letter-spacing: 0.69px;
   border: 2px solid #878061;
 }
 
+.btnAdd {
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 30px;
+background: #F7DC73;
+border-radius: 8px;
+}
 
+ .btnAdd:hover {
+   background: #F7DC73;
+   color: #303030;
+  border: 1px solid #303030;
+ }
 
  .btn:hover {
    background: #F7DC73;
@@ -868,8 +882,7 @@ footer .logo {
   height: 100%;
   width: 280px;
   color:#FFFFFF;
-  background: #353942;
-  background-image: linear-gradient(206deg, #26292F 0%, #494950 100%);
+  background: #6C695A;
   float:left;
   position: absolute;
    -webkit-transition: all 0.3s ease-in-out;
@@ -898,7 +911,7 @@ footer .logo {
  .hamburger {
    position:absolute;
    z-index: 1000;
-   background:#34495E;
+   background:#6C695A;
    color:#FFF;
    text-decoration: none;
    font-size: 22px;
@@ -913,8 +926,7 @@ footer .logo {
     height: 100vh;
     width: 14.6666667%;
     color: #FFF;
-    background:#34495E;
-    background-image: linear-gradient(206deg, #26292F 0%, #494950 94%);
+    background:#F7DC73;
     float: left;
     display: block;
     transform: translate(0,0);
@@ -936,7 +948,7 @@ footer .logo {
 
  .left-nav .site-logo {
    padding:20px 0;
-   background:#27C8BF;
+   background:#6C695A;
    display:block;
    text-align: center;
  }
@@ -946,9 +958,12 @@ footer .logo {
  .left-nav .items p {
    font-weight: 600;
    text-transform: uppercase;
-   font-size: 12px;
-   color: #E2E2E2;
-   line-height: 15px;
+font-size: 21px;
+font-family: Raleway-Bold;
+letter-spacing: 0.15px;
+   color: #303030;
+   line-height: 30px;
+   text-align: left;
  }
  .left-nav .items ul {
    margin:0 0 40px;
@@ -959,20 +974,26 @@ footer .logo {
    margin-bottom: 15px;
  }
  .left-nav .items ul li a {
-   color:#9D9FA3;
+   color:#303030;
    text-decoration: none;
    font-weight: 100;
+   font-family: OpenSans-SemiBold;
+font-size: 18px;
+color: #2C2C2C;
+letter-spacing: 0.2px;
+line-height: 30px;
  }
  .left-nav .items ul li a i {
    width:16px;
    text-align: center;
    margin-right:8px;
+
  }
 
  /* LEFT NAVBAR SETTINGS */
  .left-nav .settings {
    position:absolute;
-   background:#282B32;
+   background:#6C695A;
    width:100%;
    bottom:0;
    left:0;
@@ -1024,18 +1045,25 @@ footer .logo {
 }
 
 .content .header h1 {
-  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 100;
   margin: 0 0 30px;
   font-size: 36px;
-  color: #27C8BF;
   line-height: 44px;
   float: left;
   display: inline-block;
+  /* All Items: */
+font-family: Raleway-Regular;
+color: #969695;
+letter-spacing: 0.28px;
 }
 
 .content .header > a {
   float: right;
+font-family: Raleway-Bold;
+font-size: 24px;
+color: #2C2C2C;
+letter-spacing: 0.22px;
+
 }
 
 .content-item {
@@ -1148,17 +1176,24 @@ footer .logo {
 }
 
 .left-nav .items ul li.active {
-  color: #FFFFFF;
-  background-color: #4B4C58;
-  height: 15px;
-  padding: 5px 5px 5px 12px;
+  background-color: #FED95C;
+  height: 30px;
+  padding: 0px 15px 15px 15px;
   width: 100%;
-  margin-left: -12px;
-  border-right: 5px solid #E35640 ;
+  margin-left: -13px;
+    border-right: 5px solid #C5BB8E;
+   text-decoration: none;
+   font-weight: 100;
 }
 
 .left-nav .items ul li.active a {
-  color: #FFF;
+       color:#303030;
+   text-decoration: none;
+   font-weight: 100;
+   font-family: OpenSans-Bold;
+font-size: 18px;
+color: #303030;
+letter-spacing: 0.2px;
 }
 
 
