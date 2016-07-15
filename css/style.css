@@ -237,7 +237,7 @@ letter-spacing: 0.69px;
 
 .btnAdd {
   border-radius: 4px;
-  color: #FFF;
+  color: #303030;
   font-weight: 700;
   text-decoration: none;
   padding: 10px 30px;
@@ -250,6 +250,10 @@ border-radius: 8px;
    color: #303030;
   border: 1px solid #303030;
  }
+
+  .btnAdd:hover > a {
+   color:#303030;
+}
 
  .btn:hover {
    background: #F7DC73;
@@ -882,7 +886,7 @@ footer .logo {
   height: 100%;
   width: 280px;
   color:#FFFFFF;
-  background: #6C695A;
+  background: #F7DC73;
   float:left;
   position: absolute;
    -webkit-transition: all 0.3s ease-in-out;
@@ -1061,8 +1065,28 @@ letter-spacing: 0.28px;
 .content .header > a {
   float: right;
 font-family: Raleway-Bold;
-font-size: 24px;
-color: #2C2C2C;
+font-size: 18px;
+color: #303030;
+letter-spacing: 0.22px;
+
+}
+
+.content .header li {
+  text-align: right;
+font-family: Raleway-Bold;
+font-size: 18px;
+color: #303030;
+letter-spacing: 0.22px;
+
+}
+
+
+.settings .menu li {
+  floar: left;
+text-align: left;
+font-family: Raleway-Bold;
+font-size: 15px;
+color: #303030;
 letter-spacing: 0.22px;
 
 }
