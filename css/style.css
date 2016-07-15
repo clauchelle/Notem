@@ -444,6 +444,43 @@ line-height: 50px;
         
       }
 
+@media (max-width:420px) {
+  #banner h2{
+ width: auto;
+ position: relative;
+ text-align: center;
+  }
+#banner h3{
+ width: auto;
+ position: relative;
+ text-align: center;
+  }
+  #banner p{
+ width: auto;
+ position: relative;
+ text-align: center;
+  }
+
+}
+
+@media (max-width:420px) {
+  #bannerRight h2{
+ width: auto;
+ position: relative;
+ text-align: center;
+  }
+#bannerRight h3{
+ width: auto;
+ position: relative;
+ text-align: center;
+  }
+  #bannerRight p{
+ width: auto;
+ position: relative;
+ text-align: center;
+  }
+
+}
 
       #banner h3 {
         width: 700px;
@@ -472,6 +509,7 @@ letter-spacing: 0px;
 line-height: 50px;
 
     }
+
 
 
   #bannerRight {
@@ -1133,7 +1171,7 @@ media queries
 
 /*Trying to add more padding on right & left at small screen sizes*/
 @media (max-width: 800px) {
-  header, .benefits, .pricing, .testimonials, .advertisement, footer {
+  header, .benefits, .pricing, .testimonials, #banner, footer {
       padding: 0 5%;
   }
 }
